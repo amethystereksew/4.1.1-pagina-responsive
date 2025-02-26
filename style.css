@@ -123,7 +123,8 @@ header a:hover{
 
 #nuestra-academia h2 {
     margin-top: 0;
-    color: #d63384; /* Color acorde a la temática de ballet */
+    color: #d63384; 
+    font-size: 3.2em;;
 }
 
 #nuestra-academia p {
@@ -135,9 +136,17 @@ header a:hover{
 #nuestra-academia .carta{
     background-size: cover; 
     background-position: center center; 
-    background-repeat: no-repeat; 
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
 }
 
+.carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;S
+}
 .carta:first-child{
     background-image: linear-gradient(
     0deg,
