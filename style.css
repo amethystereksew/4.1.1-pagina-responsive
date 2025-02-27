@@ -1,8 +1,8 @@
-*{
+* {
 box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -15,10 +15,10 @@ h1 {font-size: 3.5em;}
 h2 {font-size: 2.7em;}
 h3 {font-size: 2em;}
 p {font-size: 1.25em;}
-ul{list-style-type: none;}
-li{font-size: 1.25em;}
+ul {list-style-type: none;}
+li {font-size: 1.25em;}
 
-button{
+button {
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px 20px;
@@ -30,22 +30,22 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(0, 0, 0);
 }
 
-.container{
+.container { 
     max-width: 1400px;
     margin:auto;
 }
 
-.color-acento{ color: #d63384;}
+.color-acento { color: #d63384;}
 
-header{
+header {
     background-color: rgb(245, 245, 245);
 }
 
-header .logo{
+header .logo {
     margin:0;
     padding: 25px 30px;
     font-weight: bold;
@@ -53,31 +53,31 @@ header .logo{
     font-size: 1.6em;
 }
 
-header .container{
+header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header nav{
+header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 25 px;
 }
 
-header a{
+header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color:#000;
 }
 
-header a:hover{
+header a:hover {
     color: #ffc0cb;
 }
 
-#hero{ 
+#hero { 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,15 +94,19 @@ header a:hover{
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
-#hero h1{
+#hero h1 {
     color: #fff;
 }
 
-#somos-bellanocte{
+#hero button{
+    font-size: 1.75em;
+}
+
+#somos-bellanocte {
 
 }
 
-.somos-bellanocte .container{
+.somos-bellanocte .container {
     text-align: center;
     padding: 200px 12px;
 
@@ -133,7 +137,7 @@ header a:hover{
     color: #fff; 
 }
 
-#nuestra-academia .carta{
+#nuestra-academia .carta {
     background-size: cover; 
     background-position: center center; 
     padding: 50px;
@@ -141,13 +145,14 @@ header a:hover{
     border-radius: 15px;
 }
 
-.carta{
+.carta {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;S
+    justify-content: center;
 }
-.carta:first-child{
+
+.carta:first-child {
     background-image: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.5),
@@ -156,7 +161,7 @@ header a:hover{
 ,url('imagenes/img02.jpg');
 }
 
-.carta:nth-child(2){
+.carta:nth-child(2) {
     background-image: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.5),
@@ -165,7 +170,7 @@ header a:hover{
 ,url('imagenes/img04.jpg');
 }
 
-.carta:nth-child(3){ 
+.carta:nth-child(3) { 
     
     background-image: linear-gradient(
     0deg,
@@ -173,4 +178,167 @@ header a:hover{
     rgba(0, 0, 0, 0.5)
 )
 ,url('imagenes/img05.jpg');
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 249, 249);
+    padding: 12px 0; 
+    text-align: center; 
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: transparent; 
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(0, 0, 0); 
+    background-color: rgb(255, 249, 249); 
+    width: 100%; 
+    text-align: center; 
+}
+
+@media (min-width:720px) {
+    
+    header{
+        position:fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+#hero h1{
+    font-size: 4em;
+}
+
+#somos-bellanocte .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#somos-bellanocte .text-container{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#somos-bellanocte  h2 {
+        margin-top: 0;
+}
+
+#somos-bellanocte .img-container {
+    background-image: url('imagenes/img03.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+    height: 500px;
+    width: 400px;
+}
+
+#nuestra-academia .programas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+#nuestra-academia p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#nuestra-academia h3{
+    margin-top: 0;
+}
+
+#nuestra-academia .carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%; 
+    max-width: 400px; 
+    margin: 20px auto; 
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+#caracteristicas {
+    background-image: url('imagenes/img01.png');
+    background-position: right center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    padding-right: 50%;
+}
+
+#caracteristicas .container{
+    text-align: initial;
+}
+
+#caracteristicas ul{
+    margin-left: 100px;
+}
+
+#final h2{
+    font-size: 5vw;
+}
+
+#final button{
+    font-size: 3vw;
+}
+
+#footer .container{
+    justify-content: flex-end;
+}
 }
